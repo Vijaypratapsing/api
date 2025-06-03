@@ -16,8 +16,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
- // origin: ["http://localhost:5173", "https://your-frontend.vercel.app"], 
- origin:"*",
+  //origin: ["http://localhost:5173", "https://your-frontend.vercel.app"],
+  origin:"https://client-tau-green.vercel.app", 
   credentials: true
 }));
 
