@@ -3,7 +3,6 @@ const prisma = require('../lib/prisma');
 
 const getChats = async (req, res) => {
     const tokenUserId = req.userId;
-console.log(tokenUserId)
     try {//find all chat for one user
         const chats = await prisma.chat.findMany({
             where: {
